@@ -50,6 +50,12 @@ color: #C3410D;
     max-width: 1536px;
   }
 }
+.main-heading{
+    h2{
+        font-size: 48px;
+        font-weight: 900;
+    }
+}
 
 /* ----------------Navbar Section----------------- */
 nav{
@@ -242,6 +248,54 @@ li:hover {
         }
     }
  }
+/* ------------------------Solutions Section----------------------- */
+.solutions{
+    .card{
+        border-color: #F3F4F6 !important;
+        transition: all 0.5s ease;
+        a i {
+            transition: all 0.3s ease;
+        }
+    }
+    a:hover{
+        color: #c84701;
+    }
+    .card:hover{
+        box-shadow: 5px 10px 20px -20px var(--main-color);
+        transform: translateY(-20px);
+        span{
+            transform: scale(1.05);
+        }
+        a i{
+            transform: translateX(20%);
+        }
+    }
+    .card1{
+        span{
+            background: linear-gradient(to bottom right,#E3540C 0%,#C7430D 50%);
+            width: 64px;
+            height: 64px;
+            transition: all 0.5s ease;
+        }
+    }
+}
+.card-bg2{
+    background: linear-gradient(to bottom right,#F88835 0%,#EC6116 50%) !important;
+}
+.card-bg3{
+    background: linear-gradient(to bottom right,#C74912 0%,#F48937 70%) !important;
+}
+.card-bg4{
+    background: linear-gradient(to bottom right,#E1530A 0%,#C7430B 50%,#EF8233 80%) !important;
+}
+.card-bg5{
+    background: linear-gradient(to bottom right,#F58937 0%,#C84A11 70%) !important;
+}
+.card-bg6{
+    background: linear-gradient(to bottom right,#C6440B 0%, #E4550B 70%) !important;
+}
+/* ------------------------Technologies Section---------------------- */
+
 
 
 

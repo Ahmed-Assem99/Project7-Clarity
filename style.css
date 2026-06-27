@@ -1,3 +1,4 @@
+/* -------------------- Global Styling---------------- */
 body{
   font-family: "Inter", sans-serif;
 
@@ -32,6 +33,11 @@ color: #C3410D;
     background-clip: text;
     color: transparent;
 }
+.gradient-color3{
+    background: linear-gradient(to right,var(--main-color) 0%, var(--dark-main-color) 50%);
+    background-clip: text;
+    color: transparent;
+}
 .p-color{
     color: #4A5565;
 }
@@ -44,8 +50,142 @@ color: #C3410D;
     max-width: 1536px;
   }
 }
- /*---------Main Section -----------*/
 
+/* ----------------Navbar Section----------------- */
+nav{
+    z-index: 100;
+    .navbar-brand{
+        span{
+            background: linear-gradient(to right,var(--main-color) 0%, var(--dark-main-color) 50%);
+            height: 40px;
+            width: 40px;
+        }
+    }
+    .navbar-brand:focus, .navbar-brand:hover{
+            color: transparent !important;
+        }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show,.navbar-nav .nav-link{
+        color: #364152 !important;
+        font-weight: 500;
+    }
+        .navbar-nav .nav-link.active:hover,.navbar-nav .nav-link:hover, .navbar-nav .nav-link.show:hover{
+            color: var(--main-color) !important;
+        }
+    .navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: 0;
+    height: 2px;
+    background-color: #FF6B35 !important;
+    transition: width 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover::before {
+    width: 80%;
+    }
+    .btn{
+        transition: all 0.3s ease;
+    }
+    .bt1:hover {
+        color: var(--main-color);
+    }
+     .bt2{
+     background: linear-gradient(to right,var(--main-color)0%,var(--dark-main-color)80%);
+        
+            }
+    .bt2:hover{
+     box-shadow: 0 8px 20px -8px var(--main-color);
+            }
+.navbar-toggler{
+    border: none !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-nav .dropdown {
+  position: static;
+}
+
+/* Mega Dropdown */
+.mega-dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 60vw;
+  margin-left:10vw;
+  border: none;
+  background: white;
+}
+
+.mega-dropdown .section-title {
+  color: #ff6b35;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.mega-dropdown ul li {
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+.mega-dropdown ul {
+span {
+    background-color: #F8E5DE;
+    transition: all 0.3s ease;
+}
+ .li1:hover span{
+ transform: scale(1.15);
+     background-color: #f7ded5;
+ }
+li:hover {
+    background-color: #FAECE8;
+}
+}
+.mega-dropdown ul li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.mega-dropdown ul li:hover a {
+  color: #ff6b35;
+}
+
+.dropdown-toggle::after {
+  border: none;
+  content: '▼';
+  font-size: 0.65rem;
+  margin-left: 0.5rem;
+}
+.drop-bg{
+    background-color: #FAECE8;
+    .section-title{
+        color: black;
+    }
+
+}
+
+}
+@media screen and (max-width: 992px){
+    .my-bt{
+        border:1px solid #E6E7EB !important;
+        border-radius: 24px;
+    }
+}
+ /*---------Main Section --------------------------*/
  main{
     background: linear-gradient(to bottom right,#FFF8EE,white,#FFF8EE);
     .main-l{
@@ -102,3 +242,7 @@ color: #C3410D;
         }
     }
  }
+
+
+
+

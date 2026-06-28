@@ -7,9 +7,8 @@ body{
     --sec-color:#7C2D12;
     --main-color:#EA580B;
     --dark-main-color:#C3410D;
-  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23EA580B' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
 }
-}
+
 .main-color{
     color: var(--main-color)
 }
@@ -415,16 +414,59 @@ li:hover {
 }
 /* --------------------FAQ Section---------------- */
 .FAQ{
-.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed,.accordion-button{
-    width: 100% !important;
-}
-.accordion-button::after{
-background-color: #FDEADE;
-border-radius: 50%;
-padding: 4px;
+    .accordion-item{
+        border-radius: 24px !important;
+        overflow: hidden;
+        border: 0.5px solid #ced0d2 ;
+    }
+.accordion-item:hover{
+        background-color: #F9FAFB !important;;
+        border: 0.5px solid var(--main-color);
 
 }
+.accordion-button{
+    background-color: white !important;
+    display: flex;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23EA580B'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
+.accordion-button:hover{
+    background-color: #F9FAFB !important;
+}
+.accordion-button:not(.collapsed):hover{
+    background-color: #F9FAFB;
+}
+.accordion-body{
+    background-color: white !important;
+}
+.accordion-button::after{
+    width: 40px;
+    height: 40px;
+background-color: #FDEADE;
+border-radius: 50%;
+background-position: center;
+}
+.accordion-button:not(.collapsed){
+--bs-accordion-btn-active-icon:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23EA580B'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+}
+.accordion-button:not(.collapsed){
+color: var(--sec-color);
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+}
+/* -----------------------Transform Section------------------------- */
+.transform{
+    background: linear-gradient(to bottom right,#FEF7EE 0%,#F9FAFA 50%,#FEF7EE 80%);
+    .main-heading{
+    h2{
+        font-size: 72px;
+        font-weight: 900;
+    }
+}
+}
+
 
 
 

@@ -100,6 +100,7 @@ nav{
     .navbar-nav .nav-link:hover::before {
     width: 80%;
     }
+    
     .btn{
         transition: all 0.3s ease;
     }
@@ -414,6 +415,14 @@ li:hover {
 }
 /* --------------------FAQ Section---------------- */
 .FAQ{
+    .questions{
+        width: 75%;
+    }
+    @media(max-width:1200px){
+        .questions{
+            width: 90%;
+        }
+    }
     .accordion-item{
         border-radius: 24px !important;
         overflow: hidden;
@@ -459,14 +468,195 @@ color: var(--sec-color);
 /* -----------------------Transform Section------------------------- */
 .transform{
     background: linear-gradient(to bottom right,#FEF7EE 0%,#F9FAFA 50%,#FEF7EE 80%);
+    border-bottom: 1px solid #E6E7EB;
     .main-heading{
     h2{
         font-size: 72px;
         font-weight: 900;
     }
 }
+
+.consultation-container{
+    width: 90%;
+}
+.form-section{
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+
 }
 
+.sidebar-section{
+    background-color: #BE460A;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+    @media (max-width:991px){
+        .form-section{
+            border-top-right-radius: 24px;
+            border-bottom-left-radius: 0px;
+        }
+        .sidebar-section{
+            border-bottom-left-radius: 24px;
+            border-top-right-radius: 0px;
+        }
+    }
+#consultationForm{
+    .form-control, .form-select{
+        background-color: #F3F4F6;
+        border: none;
+        transition: all 0.2s ease;
+    }
+    .form-control:focus,.form-select:focus{
+        background-color: white;
+        box-shadow: 0px 0px 1px 2px var(--main-color);
+        transform: translateY(-3px);
+
+    }
+    .budget-option{
+        border: 1.5px solid #D1D5DB;
+        padding: 12px 16px;
+        transition: all 0.3s ease;
+        display: block;
+        background-color: white;
+    }
+    .budget-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+@media (max-width: 768px) {
+    .budget-options {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+@media (min-width: 769px) {
+    .budget-options {
+        flex-direction: row;
+    }
+    
+    .budget-option {
+        flex: 1;
+    }
+}
+    .budget-option:hover{
+                border: 1.5px solid #aeb2b7;
+    }
+    .budget-option:focus{
+                border: 1.5px solid var(--main-color);
+        background-color: #FEF7F3;
+        .t1{
+            color: var(--main-color);
+        }
+    }
+    textarea{
+        min-height: 130px;
+        height: 10vw;
+        resize: none;
+    }
+    .checkbox-section{
+        a:hover{
+            text-decoration: underline !important;
+            text-decoration-color: var(--main-color) !important;
+        }
+        #privacy{
+            width: 20px;
+            height: 20px;
+        }
+        #privacy:focus{
+            accent-color:  var(--main-color);
+            width: 20px;
+            height: 20px;
+            border: 0.5px solid #FEF7F3;
+            
+        }
+    }
+
+     .btn-consultation{
+     background: linear-gradient(to right,var(--main-color)0%,var(--dark-main-color)80%); 
+     transition: all 0.5s ease;
+     .arrow{
+        transition: all 0.5s ease;
+     }
+     }
+     .btn-consultation:hover{
+        transform: translateY(-10%);
+        box-shadow: 0 12px 20px -8px var(--main-color);
+        .arrow {
+          transform: translateX(15%);  
+        }
+     }
+    
+}
+.sidebar-section{
+    .benefit-icon{
+        background-color: #CC6C47;
+        width: 80px;
+        height: 48px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .benefit-content{
+        margin-left: 12px;
+        h5{
+font-weight: bold;
+font-size: 16px;
+        }
+        p{
+            color: #EECCBF;
+            font-size: 14px;
+        }
+    }
+.direct-contact{
+
+}
+}
+}
+/* -----------------Footer Section-------------- */
+footer{
+    .footer-l{
+        span{
+            background: linear-gradient(to right,var(--main-color) 0%, var(--dark-main-color) 50%);
+            height: 40px;
+            width: 40px;
+        }
+
+    }
+        @media (max-width:769px){
+        .footer-content{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+        }
+        .footer-l{
+            align-self: start;
+        }
+        .footer-r{
+            align-self: start;
+        }
+    }
+    .footer-r{
+        span{
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            background-color: #F3F4F6;
+            transition: all 0.3s ease;
+        }
+        span:hover{
+            background-color: var(--main-color);
+            i{
+                color: white !important;
+            }
+        }
+    }
+ hr{
+    opacity: 0.1;
+ }
+}
 
 
 

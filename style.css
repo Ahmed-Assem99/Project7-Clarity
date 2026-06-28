@@ -60,7 +60,10 @@ color: #C3410D;
         font-weight: 900;
     }
 }
-
+section,
+main {
+    scroll-margin-top: 100px;
+}
 /* ----------------Navbar Section----------------- */
 nav{
     z-index: 100;
@@ -78,9 +81,11 @@ nav{
         color: #364152 !important;
         font-weight: 500;
     }
-        .navbar-nav .nav-link.active:hover,.navbar-nav .nav-link:hover, .navbar-nav .nav-link.show:hover{
-            color: var(--main-color) !important;
-        }
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show{
+    color: var(--main-color) !important;
+}
     .navbar-nav .nav-link {
     position: relative;
     transition: color 0.3s ease;
@@ -97,9 +102,10 @@ nav{
     transition: width 0.3s ease;
     }
 
-    .navbar-nav .nav-link:hover::before {
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
     width: 80%;
-    }
+}
     
     .btn{
         transition: all 0.3s ease;
@@ -257,6 +263,7 @@ li:hover {
 .solutions{
     .card{
         border-color: #F3F4F6 !important;
+        height: 100%;
         transition: all 0.5s ease;
         a i {
             transition: all 0.3s ease;
@@ -333,6 +340,7 @@ li:hover {
      .card {
         border: none;
         transition: all 0.2s ease;
+        height: 100%;
         span{
          width: 64px;
         height: 64px;
